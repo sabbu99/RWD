@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web disign and grid view</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{ 
+            background-color:coral;
+            color: white;
+            padding: 1% 5%;
+            text-align: center ;  
+        }
+        .nav-menu{ 
+            padding: 1% 5%;
+            background-color: #39a4ac;
+        }
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px;
+            display: block;
+        }
+        .main{ 
+            padding: 1% 5% ;
+            background-color: turquoise;
+        }
+        .aside{
+                padding: 1% 5% ;
+                background-color: #39a4ac;
+                text-align: center;
+
+         }
+         .fotter{ background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size:  0.8rem;
+        }
+        /* For desktop: */
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}
+
+         [class*="col-"]{
+         
+            float: left;
+            padding: 10px;
+         }
+         .row::after{
+            content: '' ;
+        clear: both;
+        display: table;
+         } 
+    @media  screen and (max-width:700px) {
+        [class*="col-"]{
+            width: 100%;
+        }
+        .nav-menu a{
+            text-align: center;
+            margin: 10px;
+            background-color: blue;
+        }
+        
+    }
+    
+
+
+    </style>
+
+</head>
+<body>
+     <div class="header" >
+        <h1>SABBIR RAHMAN </h1>
+     </div>
+     <div class="row" >
+        <div class="nav-menu col-2">
+        <a href="#"> Home </a>    
+        <a href="#">tutorial </a>
+        <a href="#">Contract </a>
+        </div>
+        <div class="main col-7">
+            <h1>I am a web designer</h1>
+           <p>The oldest classical British and Latin writings had little or no space between words and could be written in boustrophedon (alternating directions). Over time, text direction (left to right) became standardized. Word dividers and terminal punctuation became common. The first way to divide sentences into groups was the original paragraphos, similar to an underscore at the beginning of the new group.[1] The Greek parágraphos evolved into the pilcrow (¶), which in English manuscripts in the Middle Ages can be seen</p>
+            <p>Paragraphs are the building blocks of  Many students define paragraphs in terms of length: a paragraph is a group</p> <p> of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.
+
+            </p>
+        </div> 
+        <div class="aside col-3"> 
+            <h2>What i love?</h2>
+            <p> The oldest classical British and Latin writings had little or no space between words and could be written
+    
+            </p>
+            <h2>What i do?</h2>
+            <p>students define paragraphs in t</p>
+            <h2>what i don't love?</h2>
+            <p>the building blocks of Many students define  </p>
+            <h2> what i don't do?</h2>
+            <p>n reality, though, the unity and coherence o</p>
+        </div>
+     </div>
+     <div class="fotter">
+        &copy;Study with sabbu
+     </div>
+</body>
+</html>
